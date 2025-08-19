@@ -216,10 +216,10 @@ export default function AuthorsPage() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Our Author Community</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
-              { number: "500+", label: "Expert Authors", icon: "👨‍💼" },
-              { number: "2,000+", label: "Published Books", icon: "📚" },
-              { number: "150+", label: "Online Courses", icon: "🎓" },
-              { number: "50+", label: "Countries", icon: "🌍" }
+              { number: "500+", label: "Expert Authors", icon: "" },
+              { number: "2,000+", label: "Published Books", icon: "" },
+              { number: "150+", label: "Online Courses", icon: "" },
+              { number: "50+", label: "Countries", icon: "" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -236,25 +236,7 @@ export default function AuthorsPage() {
           </div>
         </div>
 
-        {/* Become an Author CTA */}
-        <div className="text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-12 text-white"
-          >
-            <h2 className="text-3xl font-bold mb-4">Share Your Expertise</h2>
-            <p className="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
-              Join our community of thought leaders and help shape the future of knowledge sharing.
-            </p>
-            <Link href="/publish">
-              <Button className="bg-white text-slate-900 hover:bg-slate-100 text-lg px-8 py-3">
-                Become an Author
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
+
       </main>
     </div>
   );

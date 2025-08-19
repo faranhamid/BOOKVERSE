@@ -75,14 +75,14 @@ export default function FictionalBooksPage() {
 
         {/* Fiction Genres */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {[
-            { title: "Science Fiction", count: "1,847", color: "bg-blue-50 border-blue-200", icon: "🚀" },
-            { title: "Fantasy", count: "2,123", color: "bg-purple-50 border-purple-200", icon: "🐉" },
-            { title: "Mystery & Thriller", count: "1,956", color: "bg-red-50 border-red-200", icon: "🔍" },
-            { title: "Romance", count: "2,334", color: "bg-pink-50 border-pink-200", icon: "💕" },
-            { title: "Historical Fiction", count: "1,567", color: "bg-amber-50 border-amber-200", icon: "🏛️" },
-            { title: "Literary Fiction", count: "1,789", color: "bg-green-50 border-green-200", icon: "📖" },
-          ].map((genre, index) => (
+                      {[
+              { title: "Science Fiction", count: "1,847", color: "bg-blue-50 border-blue-200", icon: "" },
+              { title: "Fantasy", count: "2,123", color: "bg-purple-50 border-purple-200", icon: "" },
+              { title: "Mystery & Thriller", count: "1,956", color: "bg-red-50 border-red-200", icon: "" },
+              { title: "Romance", count: "2,334", color: "bg-pink-50 border-pink-200", icon: "" },
+              { title: "Historical Fiction", count: "1,567", color: "bg-amber-50 border-amber-200", icon: "" },
+              { title: "Literary Fiction", count: "1,789", color: "bg-green-50 border-green-200", icon: "" },
+            ].map((genre, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
